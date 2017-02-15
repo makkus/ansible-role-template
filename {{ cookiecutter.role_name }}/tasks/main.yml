@@ -1,0 +1,6 @@
+---
+# tasks file for ansible-role-template
+{% for task, details in cookiecutter.tasks| dictsort -%}
+- name: {{ details.name }}
+  {{ details.task | to_nice_yaml(indent=4) }}
+{% endfor %}
