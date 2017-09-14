@@ -1,7 +1,8 @@
-
 {
     "role_name": "test",
     "tasks": {},
     "dependencies": "[]",
-    "_extensions.bak": ["freckles.jinja.freckles_extensions.utils"]
+    "_extensions.bak": [
+        "freckles.jinja.freckles_extensions.utils"
+    ]
 }
