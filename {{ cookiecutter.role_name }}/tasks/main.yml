@@ -15,6 +15,10 @@
 {% endif -%}
 {% if "become_user" in details['meta'].keys() %}  become_user: {{ details['meta']['become_user'] }}
 {% endif -%}
+{% if "register" in details['meta'].keys() %}  register: {{ details['meta']['register'] }}
+{% endif -%}
+{% if "when" in details['meta'].keys() %}  when: {{ details['meta']['when'] }}
+{% endif -%}
 {% if "ignore_errors" in details['meta'].keys() %}  ignore_errors: "{{ details['meta']['ignore_errors'] }}"
 {% endif -%}
 {% if "with_items" in details['meta'].keys() %}  with_items:
